@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidro Cundiboy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/estilos.css"> <!-- Correct path to your CSS -->
+</head>
+<body>
+    <section>
+        <input type="checkbox" id="check">
+        <header>
+            <h2><a href="../index.html" class="logo"><img src="../img/logo.png" alt="Descripción de la imagen" width="50px" height="50px">  Hidro CundiBoy</a></h2> <!-- Corrected path -->
+        <div class="navigation">
+            <a href="../index.html">Inicio</a> <!-- Corrected path -->
+            <a href="./Contacto.html">Contacto</a>
+            <a href="./Mapa.html">Mapa</a>
+            <a href="./Galeria.html">Galeria</a>
+        </div>
+        <label for="check">
+            <i class="fas fa-bars media-btn"></i>
+            <i class="fas fa-times close-btn"></i>
+        </label>
+        </header>
+
+        <h1 class="tituloGaleria">Fotos Paisaje Boyacá</h1>
+
+       <div class="slide hi-slide">
+        <div class="hi-prev"></div>
+        <div class="hi-next"></div>
+        <ul>
+            <li><img src="../img/img1.jpg" alt="foto1"></li> <!-- Corrected paths for images -->
+            <li><img src="../img/img2.jpg" alt="foto2"></li>
+            <li><img src="../img/img3.jpg" alt="foto3"></li>
+            <li><img src="../img/img4.jpg" alt="foto4"></li>
+            <li><img src="../img/img5.jpg" alt="foto5"></li>
+            <li><img src="../img/img6.jpg" alt="foto6"></li>
+            <li><img src="../img/img7.jpg" alt="foto7"></li>
+            <li><img src="../img/img8.jpg" alt="foto8"></li>
+        </ul>
+       </div>
+
+       <footer class="text-white text-center p-3 mt-4">
+        © Copyright - Bootcamp Programación G24 - 2024
+      </footer>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="../js/jquery.hislide.js"></script> <!-- Ensure this script exists at the correct path -->
+    <script>
+        $('.slide').hiSlide();
+    </script>
+</body>
+</html>
